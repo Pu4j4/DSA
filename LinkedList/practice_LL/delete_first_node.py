@@ -8,12 +8,14 @@ def delete_first_node(head):
         return None
     
     head = head.next
-    return head.data
+    return head
 
 head = Node(10)
 second = Node(20)
 third = Node(30)
+forth = Node(40)
 
 head.next = second
 second.next = third
+third.next = forth
 print(delete_first_node(head))
