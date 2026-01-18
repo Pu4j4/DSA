@@ -17,3 +17,20 @@ def avg_level(root):
                 q.append(node.right)
         result.append(level_sum/level_size)
     return result
+
+#space Optimized
+def avg(root):
+    sums = []
+    counts = []
+    def dfs(node,level):
+        if not node:
+            return
+        if level == len(sums):
+            sums.append(0)
+            counts.append(0)
+        sums[level] += node.val
+        counts[level] += 1
+        dfs(node.left,level+1)
+        dfs(node.right,level+1)
+    dfs(root,0)
+    return [sums[i]/counts[i] for i in range(len(sums))]
