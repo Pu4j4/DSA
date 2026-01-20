@@ -28,6 +28,7 @@
 #     return max_area
 
 
+
 #optimized
 def max_area_island(grid):
     rows, cols = len(grid), len(grid[0])
@@ -53,4 +54,3 @@ def max_area_island(grid):
                 max_area = max(max_area, area)
 
     return max_area
-
