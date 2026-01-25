@@ -24,4 +24,24 @@ def valid_path(self, n, edges, source, destination):
     return dfs(source)
 
 
+#optimized code
+def valid_path(self, n, edges, source, destination):
+    parent = [i for i in range(n)]
+
+    def find(x):
+        if parent[x] != x:
+            parent[x] = find(parent[x])
+        return parent[x]
+
+    def union(a, b):
+        rootA = find(a)
+        rootB = find(b)
+        if rootA != rootB:
+            parent[rootB] = rootA
+
+    for u, v in edges:
+        union(u, v)
+
+    return find(source) == find(destination)
+
 
