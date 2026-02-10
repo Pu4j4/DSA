@@ -12,3 +12,18 @@ def first_unique(s):
 s = "bhanu"
 print(first_unique(s))
 
+
+#optimized
+def first_unique(s):
+    n = len(s)
+    freq = {}
+    for ch in s:
+        freq[ch] = freq.get(ch,0) + 1
+
+    for i in range(n):
+        if freq[s[i]] == 1:
+            return i
+    return -1
+
+s = "haha"
+print(first_unique(s))
