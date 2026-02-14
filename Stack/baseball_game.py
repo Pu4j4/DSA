@@ -1,3 +1,4 @@
+#optimized
 def baseball(operations):
     stack = []
     for op in operations:
