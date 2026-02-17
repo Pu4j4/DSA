@@ -1,10 +1,10 @@
 # #Brute force
-# def isvalid(s):
-#     prev_len = -1
-#     while prev_len != len(s):
-#         prev_len = len(s)
-#         s = s.replace("()","").replace("[]","").replace("{}","")
-#     return len(s) == 0
+def isvalid(s):
+    prev_len = -1
+    while prev_len != len(s):
+        prev_len = len(s)
+        s = s.replace("()","").replace("[]","").replace("{}","")
+    return len(s) == 0
 
 
 #optimized
