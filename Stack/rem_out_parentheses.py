@@ -1,18 +1,18 @@
 #brute force
-# def rem_par(s):
-#     result = ""
-#     balance = 0
-#     start = 0
-#     for i in range(len(s)):
-#         if s[i] == '(' :
-#             balance+=1
-#         else:
-#             balance-=1
-#         if balance == 0:
-#             result += s[start+1:i]
-#             start = i+1
-#     return result
-# print(rem_par("(())"))
+def rem_par(s):
+    result = ""
+    balance = 0
+    start = 0
+    for i in range(len(s)):
+        if s[i] == '(' :
+            balance+=1
+        else:
+            balance-=1
+        if balance == 0:
+            result += s[start+1:i]
+            start = i+1
+    return result
+print(rem_par("(())"))
 
 
 
