@@ -15,6 +15,17 @@ def top_k(nums,k):
         result.append(sorted_items[i][0])
     return result
 
+#optimized
+def top_k(nums,k):
+    freq = {}
+    for num in nums:
+        freq[num] = freq.get(num,0)+1
+    heap = []
+    for num,count in freq.items():
+        heapq.heappush(heap,(count,num))
+        if len(heap) > k:
+            heapq.heappop(heap)
+    return [num for count,num in heap]
 
 nums = [1,1,1,2,2,3,3,3]
 k = 2
