@@ -1,43 +1,36 @@
 #brute force
-def search(self, nums, target):
-    for x in nums:
-        if x == target:
-            return True
-    return False
-
-
+def search(nums, target):
+    for i in range(len(nums)):
+        if nums[i] == target:
+            return i
+    return -1
 
 #optimized
-def search(self, nums, target):
+def search(nums, target):
     left, right = 0, len(nums) - 1
 
     while left <= right:
         mid = (left + right) // 2
 
         if nums[mid] == target:
-            return True
-
-        # duplicates block decision
-        if nums[left] == nums[mid] == nums[right]:
-            left += 1
-            right -= 1
+            return mid
 
         # left half sorted
-        elif nums[left] <= nums[mid]:
+        if nums[left] <= nums[mid]:
             if nums[left] <= target < nums[mid]:
                 right = mid - 1
             else:
                 left = mid + 1
 
         # right half sorted
+        # if nums[mid] <= nums[right]:
         else:
-            if nums[mid] < target <= nums[right]:
+            if nums[mid] <= target < nums[right]:
                 left = mid + 1
             else:
                 right = mid - 1
 
-    return False
+    return -1
 
-
-
-
+nums = [4,5,6,1,2,3]
+print(search(nums, 2))
