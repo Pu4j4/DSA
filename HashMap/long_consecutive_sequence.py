@@ -18,7 +18,7 @@ def longestConsecutive(nums) :
 
 
 # optimized
-def longestConsecutive( nums):
+def longestConsecutive(nums):
     max_len = 0
     num_set = set(nums)
     for num in num_set:
