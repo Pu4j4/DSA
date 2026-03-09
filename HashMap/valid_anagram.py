@@ -16,7 +16,7 @@ def valid_anagram(s,t):
         return False
     return sorted(s) == sorted(t)
 
-print(valid_anagram("anagram","nagaram"))
+
 
 #Time: O(n log n) - sorting  space: O(1)
 
@@ -46,6 +46,8 @@ def is_anagram(s,t):
         if freq[ch]<0:
             return False
     return True
+
+print(valid_anagram("anagram","nagaram"))
 
 #Time: O(n) - single loop,O(1) hashmap lookup   Space: O(1) - stores max 26 characters
 
