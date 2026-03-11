@@ -11,13 +11,13 @@
 # if it contains duplicate return true else False
 
 #brute force
-# def contain_duplicate(nums):
-#     n = len(nums)
-#     for i in range(n):
-#         for j in range(i+1,n):
-#             if nums[i] == nums[j]:
-#                 return True
-#     return False
+def contain_duplicate(nums):
+    n = len(nums)
+    for i in range(n):
+        for j in range(i+1,n):
+            if nums[i] == nums[j]:
+                return True
+    return False
 #
 # print(contain_duplicate([1,3,4,2,1,2]))
 
