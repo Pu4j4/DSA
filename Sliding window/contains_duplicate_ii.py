@@ -20,7 +20,7 @@ def contains_dup(nums,k):
                 return True
     return False
 
-#Time: O(n^2) - nested loops   Space:O(1) - no extra space used
+#Time: O(n*k) - nested loops   Space:O(1) - no extra space used
 
 #why it's slow
 #for every element, we check k elements
