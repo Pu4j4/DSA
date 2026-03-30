@@ -31,6 +31,7 @@ def remove_element(nums,val):
 #if element not equal to val: -> assign nums[k] = nums[i] , increment k
 #return k
 
+
 #Optimized
 def remove_element(nums, val):
     k = 0
