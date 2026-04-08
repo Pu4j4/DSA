@@ -33,6 +33,7 @@ def is_palindrome(head):
     return True
 
 
+
 head = Node(10)
 second = Node(20)
 third = Node(10)
