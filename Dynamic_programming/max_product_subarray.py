@@ -13,3 +13,6 @@ def max_product(nums):
             max_product = max(max_product, product)
 
     return max_product
+
+nums = [2,3,-2,4]
+print(max_product(nums))
