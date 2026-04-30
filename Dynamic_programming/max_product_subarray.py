@@ -34,3 +34,6 @@ def max_product(nums) -> int:
         result = max(result, curr_max)
 
     return result
+
+nums = [2,3,-2,4]
+print(max_product(nums))
