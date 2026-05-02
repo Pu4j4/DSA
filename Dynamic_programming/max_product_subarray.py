@@ -1,4 +1,4 @@
-#brute force
+#brute force approach
 def max_product(nums):
 
     n = len(nums)
