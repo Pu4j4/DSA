@@ -16,7 +16,7 @@ def max_product(nums):
     return max_product
 
 
-#optimized
+#optimized approach
 def max_product(nums) -> int:
     curr_max = nums[0]
     curr_min = nums[0]
