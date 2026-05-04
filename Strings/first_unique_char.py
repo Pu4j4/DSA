@@ -27,7 +27,6 @@ print(first_unique(s))
 
 #Time:  O(n^2) - nested loops   Space: O(1)
 
-
 #why it's slow
 #checks each and every character
 #repeated comparisons
