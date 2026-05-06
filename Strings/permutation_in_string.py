@@ -60,3 +60,4 @@ s2 = 'bgcolor'
 print(check_perms(s1,s2))
 
 #Time: O(n) - each character is added and removed once   Space: O(1)- freq array, max 26 array
+
