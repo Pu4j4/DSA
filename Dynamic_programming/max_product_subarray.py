@@ -1,6 +1,5 @@
 #brute force approach
 def max_product(nums):
-
     n = len(nums)
     max_product = float('-inf')
 
