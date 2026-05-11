@@ -8,3 +8,4 @@ def longestCommonPrefix(strs ):
             if not prefix:
                 return ""
     return prefix
+
