@@ -12,3 +12,4 @@ def has_cycle( head):
         if slow == fast:
             return True
     return False
+
